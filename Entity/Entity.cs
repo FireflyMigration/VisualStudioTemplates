@@ -9,7 +9,7 @@ namespace $rootnamespace$
     public class $safeitemname$ : Entity
     {
         
-        public $safeitemname$() : base("$safeitemname$", dataSource)
+        public $safeitemname$() : base("$safeitemname$", Shared.DataSources.Memory)
         {
         }
         
