@@ -12,7 +12,7 @@ namespace $rootnamespace$
     public class $safeitemname$ : BusinessProcessBase
     {
         ENV.IO.FileWriter _fileWriter;
-        TextIO.$safeitemname$Layout _layout;
+        TextIO.$safeitemname$Layout _layout => Cached<TextIO.$safeitemname$Layout>();
 
         public $safeitemname$()
         {
@@ -21,7 +21,6 @@ namespace $rootnamespace$
 
         protected override void OnLoad()
         {
-            _layout = new TextIO.$safeitemname$Layout(this);
             _fileWriter = new ENV.IO.FileWriter("$safeitemname$.txt");
             Streams.Add(_fileWriter);
         }

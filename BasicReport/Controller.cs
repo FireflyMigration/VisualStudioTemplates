@@ -12,7 +12,7 @@ namespace $rootnamespace$
     public class $safeitemname$ : BusinessProcessBase
     {
         PrinterWriter _printer;
-        Printing.$safeitemname$Layout _layout;
+        Printing.$safeitemname$Layout _layout => Cached<Printing.$safeitemname$Layout>(); 
 
         public $safeitemname$()
         {
@@ -21,7 +21,6 @@ namespace $rootnamespace$
 
         protected override void OnLoad()
         {
-            _layout = new Printing.$safeitemname$Layout(this);
             _printer = new PrinterWriter{PrintPreview = true};
             Streams.Add(_printer);
         }
