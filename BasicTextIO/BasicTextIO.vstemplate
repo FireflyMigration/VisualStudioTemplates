@@ -6,7 +6,7 @@
     <Icon>BasicTextIO.ico</Icon>
     <TemplateID>4167ed05-9423-4a49-a445-0a3f3139fa47</TemplateID>
     <ProjectType>CSharp</ProjectType>
-    <DefaultName>>BasicTextIO.cs</DefaultName>
+    <DefaultName>BasicTextIO.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References />
