@@ -8,7 +8,7 @@ namespace $rootnamespace$
 {
     public class $safeitemname$:NumberColumn
     {
-        public $safeitemname$():base("$safeitemname$")
+        public $safeitemname$(string name = "$safeitemname$", string format = null, string caption = null):base(name, format, caption)
         {
         }
     }
